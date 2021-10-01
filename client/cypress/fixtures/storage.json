@@ -1,0 +1,12 @@
+{
+  "storage": [
+    { "name": "Croissant", "stock": 12, "price": 1.7 },
+    { "name": "Bread", "stock": 7, "price": 1.5 },
+    { "name": "Cupcake", "stock": 25, "price": 1.6 },
+    { "name": "Pretzel", "stock": 18, "price": 0.8 },
+    { "name": "Muffin", "stock": 31, "price": 2.3 },
+    { "name": "Pancake", "stock": 10, "price": 1.5 },
+    { "name": "Waffle", "stock": 14, "price": 2.2 },
+    { "name": "Cake", "stock": 3, "price": 8.5 }
+  ]
+}
