@@ -1,12 +1,11 @@
-# Bakery App
-
+# Bakery App – Auto1 Frontend Challenge
 ![bakery shop](https://static.vecteezy.com/system/resources/previews/002/045/877/large_2x/fancy-bakery-shop-with-trees-and-bike-vector.jpg)
 
 ## Context
 
 The local bakery would like to extend its business by offering their products online. They approached you to help them build an app for this purpose.
 
-This app should list all the different bakery products and needs to give the option to order them.
+This app should list all the different bakery products and needs to give the option to order them. 
 
 Luckily the bakery provides an [API](#api-reference) as well as a [design](#design) for you to work with.
 
@@ -16,10 +15,10 @@ As a customer:
 
 - [ ] I want to see a list of all products the bakery offers.
 - [ ] For each product I want to see:
-  - [ ] Product name
-  - [ ] Product thumbnail
-  - [ ] Product price
-- [ ] For each product I want to be able:
+    - [ ] Product name
+    - [ ] Product thumbnail
+    - [ ] Product price
+- [ ] For each product I want to be able: 
   - [ ] to select the amount I want to order
   - [ ] to not select more items than are available
 - [ ] I want to see the total price of all my selected products.
@@ -48,6 +47,11 @@ Font being used in these screens is [Montserrat](https://fonts.google.com/specim
 - Bootstrap 3, 4 or 5
 - Using any CSS preprocessor is a plus
 
+## Instructions
+
+- Build a clean and well-structured solution
+- Send it to [frontend-marketing-challenge@auto1-group.com](mailto:frontend-marketing-challenge@auto1-group.com) as a zip container (please name is as A1G-FE-challenge-${your_name})
+
 ## API Reference
 
 #### Get all items
@@ -59,11 +63,11 @@ Font being used in these screens is [Montserrat](https://fonts.google.com/specim
 - Returns an array `storage`
 - Inside of `storage` are multiple objects with the following structure:
 
-| Key     | Type      | Description              |
-| :------ | :-------- | :----------------------- |
-| `name`  | `string`  | Name of item             |
+| Key | Type | Description |
+| :-------- | :------- | :--- |
+| `name` | `string` | Name of item |
 | `stock` | `integer` | Number of items in stock |
-| `price` | `number`  | Price of item            |
+| `price` | `number` | Price of item |
 
 #### Post order
 
@@ -74,29 +78,29 @@ Font being used in these screens is [Montserrat](https://fonts.google.com/specim
 - Expects an array `items`
 - Inside of `items` one or multiple objects of the following structure are expected:
 
-| Key        | Type      | Description                             |
-| :--------- | :-------- | :-------------------------------------- |
-| `name`     | `string`  | **Required**. name of item to order     |
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| `name` | `string` | **Required**. name of item to order |
 | `quantity` | `integer` | **Required**. quantity of item to order |
 
 - the api will return status code 200 and `{message: 'success'}` if the order went through
 - the api will return status code 400 and `{error: 'ERROR_MESSAGE', errorItem: 'ITEM_NAME'}` if the quantity is too high for a certain item
 
 ## Setup and run server
-
 ```
-cd shoppingcart-react
+cd auto1-challenge
 npm i
 npm run start
 ```
+
 
 ## Setup and run frontend
-
 ```
-cd shoppingcart-react/client
+cd auto1-challenge/client
 npm i
 npm run start
 ```
+
 
 ## Credits
 
