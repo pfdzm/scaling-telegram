@@ -1,9 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const PORT = process.env.PORT || 3001;
+const path = require('path')
 const app = express();
-const cors = require("cors");
+const cors = require('cors');
 const jsonParser = bodyParser.json();
+const PORT = process.env.PORT || 3001;
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 let storage = [
@@ -47,6 +48,16 @@ app.post("/api/order", jsonParser, (req, res) => {
   }
   res.json({ message: "success" });
 });
+
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, '/../client/build')));
+    
+  // Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);

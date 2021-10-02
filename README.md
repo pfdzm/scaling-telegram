@@ -1,4 +1,4 @@
-# Bakery App – Auto1 Frontend Challenge
+# Bakery App
 ![bakery shop](https://static.vecteezy.com/system/resources/previews/002/045/877/large_2x/fancy-bakery-shop-with-trees-and-bike-vector.jpg)
 
 ## Context
@@ -47,11 +47,6 @@ Font being used in these screens is [Montserrat](https://fonts.google.com/specim
 - Bootstrap 3, 4 or 5
 - Using any CSS preprocessor is a plus
 
-## Instructions
-
-- Build a clean and well-structured solution
-- Send it to [frontend-marketing-challenge@auto1-group.com](mailto:frontend-marketing-challenge@auto1-group.com) as a zip container (please name is as A1G-FE-challenge-${your_name})
-
 ## API Reference
 
 #### Get all items
@@ -88,7 +83,7 @@ Font being used in these screens is [Montserrat](https://fonts.google.com/specim
 
 ## Setup and run server
 ```
-cd auto1-challenge
+cd scaling-telegram
 npm i
 npm run start
 ```
@@ -96,7 +91,7 @@ npm run start
 
 ## Setup and run frontend
 ```
-cd auto1-challenge/client
+cd scaling-telegram/client
 npm i
 npm run start
 ```
